@@ -11,13 +11,16 @@ no build step, no framework, no dependencies.
 
 ## Structure
 
-- `index.html` — Home: bio, focus areas, quick facts
-- `experience.html` — Case studies: Gift of Life, Vertex, MGH, Cancer Genetics Research
-- `leadership.html` — Tulane Miracle, Ubuntu Mundo, and additional involvement
-- `academics.html` — Education, coursework, skills, certifications
+- `index.html` — Home: photo, bio, quick facts, focus-area pillars
+- `experience.html` — Case studies: Gift of Life, Vertex, MGH, AP Derm, Cancer Genetics Research, Bedford Farms
+- `projects.html` — Featured research/policy projects + developing/exploratory work, each labeled with real status
+- `leadership.html` — Tulane Miracle, Pi Beta Phi, Ubuntu Mundo, and additional involvement
+- `academics.html` — Education, MPH acceptance, coursework, skills, certifications
 - `resume.html` — Embedded resume viewer + PDF download
-- `contact.html` — Email and LinkedIn
+- `contact.html` — Email, LinkedIn, GitHub
 - `assets/Talia-Bout-Resume.pdf` — downloadable resume
+- `assets/writing/` — HCT access disparities paper; Vertex Medicaid one-pager (published with Vertex's clearance)
+- `assets/img/` — headshot
 - `css/style.css` — shared design system (light/dark theme, layout, motion)
 - `js/script.js` — theme toggle, mobile nav, scroll-reveal animations
 
@@ -55,3 +58,21 @@ Iteration history for review — each entry is a pushed, deployed version.
   (coursework, skills, certifications), a Resume page with inline PDF
   viewer and download button, and a Contact page with email and
   LinkedIn. Removed all references to running/fitness per request.
+- **2026-09-22 15:40 UTC** — Content and design pass driven by a detailed
+  accuracy brief and reference design. Added a real headshot; a typographic
+  refresh (Source Serif 4 / IBM Plex Sans / IBM Plex Mono, teal/amber/navy
+  palette) closer to the reference site; and a new Projects page covering
+  six featured cases (Vertex Medicaid policy, Navigate to Lung Health,
+  Herbolario Doemi, adolescent obesity research, maternal health policy,
+  Gift of Life) plus a Developing/Exploratory section (Medicaid Navigator,
+  CAR-T access pathway), each labeled with its real status (proposal vs.
+  completed vs. ongoing) per the brief's accuracy guidance. Rewrote the
+  Gift of Life entry to describe it as an active capstone rather than
+  asserting unverified drive/swab counts. Added AP Derm and Bedford Farms
+  to Experience; added Pi Beta Phi and National Charity League detail to
+  Leadership; added the Accelerated MPH acceptance and fuller coursework
+  to Academics; added GitHub throughout. Published Talia's own HCT
+  access-disparities paper and, once confirmed cleared by Vertex, the
+  Medicaid work-requirements patient one-pager as linked work samples. Did
+  not publish the Vertex fellow-prioritization framework (an internal,
+  unshared spreadsheet).
