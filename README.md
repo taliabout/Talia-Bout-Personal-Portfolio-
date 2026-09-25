@@ -76,3 +76,14 @@ Iteration history for review — each entry is a pushed, deployed version.
   Medicaid work-requirements patient one-pager as linked work samples. Did
   not publish the Vertex fellow-prioritization framework (an internal,
   unshared spreadsheet).
+- **2026-09-25 22:39 UTC** — Professionalism/conciseness pass. Home: removed
+  the "Current Role" and "Graduate Path" quick facts (campus-ambassador
+  framing and the still-undecided MPH); bio now leads with Vertex and MGH.
+  Experience: reordered to lead with Vertex, tightened every entry, and
+  moved AP Derm/Bedford Farms into a compact "Additional Experience" list.
+  Leadership: trimmed each entry to a single tight paragraph. Projects:
+  reorganized into three labeled categories — Policy & Market Access,
+  Strategy Projects, and AI Projects (Medicaid Navigator, now noting an
+  upcoming cystic fibrosis policy project with the Boomer Esiason
+  Foundation, and the CAR-T literature review) — and dropped the
+  adolescent-obesity card to keep the page tighter.
