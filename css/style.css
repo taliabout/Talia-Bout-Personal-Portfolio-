@@ -338,6 +338,7 @@ a:hover { color: var(--link-hover); }
   border-top: 1px solid var(--border);
   padding-top: 28px;
 }
+.quick-facts-row-2 { grid-template-columns: repeat(2, 1fr); max-width: 460px; }
 .qf-label {
   display: block;
   font-family: var(--font-mono);
