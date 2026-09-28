@@ -27,9 +27,9 @@ horizontal scrolling, working menu and dark-mode toggle).
 
 ## Structure
 
-- `index.html` — Home: photo, bio, quick facts, focus-area pillars
+- `index.html` — Home: photo, bio, roles sought, impact numbers, focus areas, outside-of-work note
 - `experience.html` — Vertex, MGH, Gift of Life, Cancer Genetics Research, plus additional experience
-- `projects.html` — Policy & Market Access, AI Projects, and Strategy Projects, each labeled with real status
+- `projects.html` — Writing Samples, Policy & Market Access, AI Projects, and Strategy Projects, each labeled with real status
 - `leadership.html` — Tulane Miracle, Pi Beta Phi, Ubuntu Mundo, and additional involvement
 - `academics.html` — Education, coursework, skills, certifications
 - `resume.html` — Resume download (with an inline preview on desktop)
@@ -120,3 +120,10 @@ Iteration history for review — each entry is a pushed, deployed version.
   hid the inline PDF preview on phones (mobile browsers can't render it),
   made footer email links open an email directly, and removed unused CSS.
   All pages pass HTML validation with zero errors.
+- **2026-09-28** — Recruiter-focused additions. Home: a "Seeking" statement
+  (2027 roles in market access, health policy, and life-sciences
+  consulting), a "By the Numbers" impact row (50-state tracker, ~500 bills,
+  ~40 leaders briefed, $35K+ raised), and a short "Outside of Work" note
+  (skiing and horseback riding). Projects: a new Writing Samples section
+  featuring the Vertex patient brief and the HCT access-disparities paper.
+  Contact: intro now states what roles she's seeking.
