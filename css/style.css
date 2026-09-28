@@ -83,7 +83,12 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   transition: background 0.25s ease, color 0.25s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+main { flex: 1 0 auto; }
 
 img { max-width: 100%; display: block; }
 
@@ -319,7 +324,7 @@ a:hover { color: var(--link-hover); }
   border-top: 1px solid var(--border);
   padding-top: 28px;
 }
-.quick-facts-row-2 { grid-template-columns: repeat(2, 1fr); max-width: 460px; }
+.quick-facts-row-2 { grid-template-columns: 1.4fr 1fr; max-width: 620px; }
 .qf-label {
   display: block;
   font-family: var(--font-mono);
