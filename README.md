@@ -127,3 +127,10 @@ Iteration history for review — each entry is a pushed, deployed version.
   (skiing and horseback riding). Projects: a new Writing Samples section
   featuring the Vertex patient brief and the HCT access-disparities paper.
   Contact: intro now states what roles she's seeking.
+- **2026-09-28** — Final review pass. Replaced the Leadership headline with
+  a more professional one, reordered Experience newest-first to match the
+  resume (Gift of Life first), restored the resume's "Cancer Genetics
+  Research" label, corrected the "Formulation of Health Policy" course name,
+  and fixed the theme-toggle icon for visitors whose devices use dark mode.
+  Re-verified: 0 HTML errors, 0 broken links or anchors, valid structured
+  data and sitemap, and clean browser tests at desktop and phone widths.
