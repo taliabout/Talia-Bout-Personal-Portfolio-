@@ -9,20 +9,38 @@ no build step, no framework, no dependencies.
 
 **Live site:** https://taliabout.github.io/Talia-Bout-Personal-Portfolio-/
 
+## How this site was built
+
+Built with **Claude Code** (Anthropic's coding agent) connected directly to
+this GitHub repository. Each round of changes was made on a working branch,
+opened as a pull request, reviewed, and merged into `main`, which
+automatically redeploys the site through GitHub Actions and GitHub Pages.
+The full history is visible in this repo's
+[pull requests](https://github.com/taliabout/Talia-Bout-Personal-Portfolio-/pulls?q=is%3Apr)
+and commit log.
+
+Quality checks run before each release: HTML validation
+([html-validate](https://html-validate.org/)), an internal link and anchor
+checker, WCAG AA color-contrast checks, and automated browser tests at
+desktop and phone widths (no console errors, no broken images, no
+horizontal scrolling, working menu and dark-mode toggle).
+
 ## Structure
 
 - `index.html` — Home: photo, bio, quick facts, focus-area pillars
-- `experience.html` — Case studies: Gift of Life, Vertex, MGH, AP Derm, Cancer Genetics Research, Bedford Farms
-- `projects.html` — Featured research/policy projects + developing/exploratory work, each labeled with real status
+- `experience.html` — Vertex, MGH, Gift of Life, Cancer Genetics Research, plus additional experience
+- `projects.html` — Policy & Market Access, AI Projects, and Strategy Projects, each labeled with real status
 - `leadership.html` — Tulane Miracle, Pi Beta Phi, Ubuntu Mundo, and additional involvement
-- `academics.html` — Education, MPH acceptance, coursework, skills, certifications
-- `resume.html` — Embedded resume viewer + PDF download
+- `academics.html` — Education, coursework, skills, certifications
+- `resume.html` — Resume download (with an inline preview on desktop)
 - `contact.html` — Email, LinkedIn, GitHub
-- `assets/Talia-Bout-Resume.pdf` — downloadable resume
+- `404.html` — Custom "page not found" page
+- `robots.txt`, `sitemap.xml` — Search-engine crawling and indexing
+- `assets/Talia-Bout-Resume.pdf` — Downloadable resume
 - `assets/writing/` — HCT access disparities paper; Vertex Medicaid one-pager (published with Vertex's clearance)
-- `assets/img/` — headshot
-- `css/style.css` — shared design system (light/dark theme, layout, motion)
-- `js/script.js` — theme toggle, mobile nav, scroll-reveal animations
+- `assets/img/` — Headshot, social-share preview image, and home-screen icon
+- `css/style.css` — Shared design system (light/dark theme, layout, motion)
+- `js/script.js` — Theme toggle, mobile nav, scroll-reveal animations
 
 ## Running locally
 
@@ -87,3 +105,18 @@ Iteration history for review — each entry is a pushed, deployed version.
   upcoming cystic fibrosis policy project with the Boomer Esiason
   Foundation, and the CAR-T literature review) — and dropped the
   adolescent-obesity card to keep the page tighter.
+- **2026-09-25 22:46 UTC** — Reframed the patient navigator project around
+  its cystic fibrosis policy work with the Boomer Esiason Foundation, added
+  a framing note to AI Projects, and moved that section up the page.
+- **2026-09-28** — Submission-readiness pass. Synced every page to the
+  updated resume (GPA 3.81 and Dean's List, Gift of Life Campus Ambassador
+  role with 10 drives and a 25-person team, corrected Vertex and MGH dates,
+  Samuel Fisher Memorial Fellow title, ~35-person lab presentations, Applied
+  AI Literacy Badge) and replaced the downloadable resume PDF. Added web
+  best practices: social-share preview image and Open Graph tags,
+  canonical URLs, structured data, a custom 404 page, `robots.txt`,
+  `sitemap.xml`, and a home-screen icon. Fixed heading hierarchy, raised two
+  low-contrast colors to meet WCAG AA, corrected the headshot's dimensions,
+  hid the inline PDF preview on phones (mobile browsers can't render it),
+  made footer email links open an email directly, and removed unused CSS.
+  All pages pass HTML validation with zero errors.
