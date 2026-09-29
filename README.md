@@ -134,3 +134,6 @@ Iteration history for review — each entry is a pushed, deployed version.
   and fixed the theme-toggle icon for visitors whose devices use dark mode.
   Re-verified: 0 HTML errors, 0 broken links or anchors, valid structured
   data and sitemap, and clean browser tests at desktop and phone widths.
+- **2026-09-29** — Removed the "View repository" link from the Patient
+  Navigator project (the repository has no code yet); the card now credits
+  the Boomer Esiason Foundation as partner.
