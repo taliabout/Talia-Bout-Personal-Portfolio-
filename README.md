@@ -7,7 +7,7 @@ Tropical Medicine (Class of 2027).
 Built as a static, multi-page site with plain HTML, CSS, and JavaScript —
 no build step, no framework, no dependencies.
 
-**Live site:** https://taliabout.github.io/Talia-Bout-Personal-Portfolio-/
+**Live site:** https://taliabout.com/
 
 ## How this site was built
 
@@ -137,3 +137,10 @@ Iteration history for review — each entry is a pushed, deployed version.
 - **2026-09-29** — Removed the "View repository" link from the Patient
   Navigator project (the repository has no code yet); the card now credits
   the Boomer Esiason Foundation as partner.
+- **2026-09-29** — Custom domain: the site now lives at
+  [taliabout.com](https://taliabout.com/). Registered through Namecheap and
+  pointed to GitHub Pages with four `A` records (GitHub's Pages IPs) and a
+  `www` `CNAME` to `taliabout.github.io`; the domain is set under the repo's
+  Settings → Pages. Updated canonical URLs, social-share
+  tags, structured data, `robots.txt`, and `sitemap.xml` to the new domain.
+  The old `taliabout.github.io` address redirects automatically.

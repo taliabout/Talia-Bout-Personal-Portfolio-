@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://taliabout.github.io/Talia-Bout-Personal-Portfolio-/sitemap.xml
+Sitemap: https://taliabout.com/sitemap.xml
