@@ -38,9 +38,10 @@ horizontal scrolling, working menu and dark-mode toggle).
 - `robots.txt`, `sitemap.xml` — Search-engine crawling and indexing
 - `assets/Talia-Bout-Resume.pdf` — Downloadable resume
 - `assets/writing/` — HCT access disparities paper; Vertex Medicaid one-pager (published with Vertex's clearance)
-- `assets/img/` — Headshot, social-share preview image, and home-screen icon
-- `css/style.css` — Shared design system (light/dark theme, layout, motion)
-- `js/script.js` — Theme toggle, mobile nav, scroll-reveal animations
+- `assets/img/` — Circular-crop portrait (two sizes for fast loading), social-share preview image, and home-screen icon
+- `assets/fonts/` — Self-hosted Playfair Display and Inter (SIL Open Font License)
+- `css/style.css` — Shared design system (light/dark theme, layout, motion, print styles)
+- `js/script.js` — Theme toggle, mobile nav, scroll-reveal and count-up animations, scroll progress bar, back-to-top button
 
 ## Running locally
 
@@ -144,3 +145,19 @@ Iteration history for review — each entry is a pushed, deployed version.
   Settings → Pages. Updated canonical URLs, social-share
   tags, structured data, `robots.txt`, and `sitemap.xml` to the new domain.
   The old `taliabout.github.io` address redirects automatically.
+- **2026-10-06** — Visual redesign and Round 1 feedback fixes. New clean
+  palette of white, light blues, and greys, with a matching dark mode; new
+  magazine-style typography (Playfair Display headings, Inter body text),
+  now self-hosted instead of loaded from Google Fonts. Homepage portrait is
+  now a circular crop with a layered light-blue halo and a "Tulane '27"
+  badge; impact numbers sit on cards and count up when scrolled into view;
+  focus areas are numbered cards. Feedback fixes: enlarged the small
+  uppercase labels (especially on phones), and gave the Gift of Life entry a
+  row of semester-target metrics (10 drives, 50 registrations per drive,
+  500 new registrants targeted, 25-person team), labeled as targets while
+  the drive season is in progress. Code upgrades: scroll progress bar,
+  header shadow on scroll, back-to-top button, menu closes on Escape or
+  outside tap, smooth page-to-page transitions, responsive image sizes,
+  print-friendly styles, and content that stays visible if JavaScript is
+  off. Regenerated the social-share card and home-screen icon in the new
+  style. All colors re-checked against WCAG AA contrast.

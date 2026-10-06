@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Talia Bout — Health Policy, Market Access &amp; Biotech Strategy</title>
 <meta name="description" content="Talia R. Bout — Public Health student at Tulane University focused on healthcare policy, market access, and biotech/pharma strategy." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231f6f5c%22/><text x=%2250%22 y=%2266%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23f7f5ee%22 font-family=%22Georgia,serif%22>T</text></svg>" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231b3358%22/><text x=%2250%22 y=%2266%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Georgia,serif%22>T</text></svg>" />
+<link rel="preload" href="assets/fonts/playfair-display-var.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin />
 <!-- meta:start -->
-<meta name="theme-color" content="#f7f5ee" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0d1210" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
 <meta name="author" content="Talia R. Bout" />
 <link rel="canonical" href="https://taliabout.com/" />
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
@@ -32,7 +31,7 @@
   "@type": "Person",
   "name": "Talia R. Bout",
   "url": "https://taliabout.com/",
-  "image": "https://taliabout.com/assets/img/og-card.jpg",
+  "image": "https://taliabout.com/assets/img/talia-portrait-800.webp",
   "email": "mailto:tbout@tulane.edu",
   "jobTitle": "Public Health Student",
   "affiliation": {
@@ -53,9 +52,11 @@
   ]
 }
 </script>
+<link rel="preload" as="image" href="assets/img/talia-portrait-800.webp" imagesrcset="assets/img/talia-portrait-440.webp 440w, assets/img/talia-portrait-800.webp 800w" imagesizes="(max-width: 900px) 240px, 380px" fetchpriority="high" />
 <link rel="stylesheet" href="css/style.css" />
 <script>
   (function () {
+    document.documentElement.classList.add("js");
     try {
       var t = localStorage.getItem("talia-theme");
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
@@ -95,7 +96,7 @@
 
   <section class="home-hero">
     <div class="container home-hero-grid">
-      <div class="reveal">
+      <div class="hero-copy reveal">
         <p class="eyebrow">Public Health &middot; Policy &middot; Strategy</p>
         <h1 class="home-title">Talia R. Bout</h1>
         <blockquote class="quote">Who actually gets to access the care that already exists?</blockquote>
@@ -135,10 +136,14 @@
         </div>
       </div>
 
-      <div class="reveal">
-        <div class="photo-frame">
-          <img src="assets/img/talia-headshot.webp" alt="Portrait of Talia R. Bout" width="1610" height="1402" fetchpriority="high" />
-        </div>
+      <div class="hero-media reveal">
+        <figure class="portrait">
+          <img src="assets/img/talia-portrait-800.webp"
+               srcset="assets/img/talia-portrait-440.webp 440w, assets/img/talia-portrait-800.webp 800w"
+               sizes="(max-width: 900px) 240px, 380px"
+               width="800" height="800" alt="Portrait of Talia R. Bout" fetchpriority="high" decoding="async" />
+          <figcaption class="portrait-badge">Tulane &rsquo;27 &middot; Public Health</figcaption>
+        </figure>
       </div>
     </div>
 
@@ -156,28 +161,28 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <p class="section-label reveal">By the Numbers</p>
       <h2 class="page-title section-title reveal">Selected impact.</h2>
       <div class="stats-grid reveal">
         <div class="stat">
-          <span class="stat-num">50</span>
+          <span class="stat-num" data-count>50</span>
           <span class="stat-what">State "medically frail" exemption definitions tracked under Medicaid work requirements</span>
           <span class="stat-src">Vertex Pharmaceuticals</span>
         </div>
         <div class="stat">
-          <span class="stat-num">~500</span>
+          <span class="stat-num" data-count>~500</span>
           <span class="stat-what">State bills tracked across the policy and reimbursement portfolio</span>
           <span class="stat-src">Vertex Pharmaceuticals</span>
         </div>
         <div class="stat">
-          <span class="stat-num">~40</span>
+          <span class="stat-num" data-count>~40</span>
           <span class="stat-what">Public Affairs staff briefed, including Director- and VP-level leadership</span>
           <span class="stat-src">Vertex Pharmaceuticals</span>
         </div>
         <div class="stat">
-          <span class="stat-num">$35K+</span>
+          <span class="stat-num" data-count>$35K+</span>
           <span class="stat-what">Raised for Children's Hospital New Orleans through events she directed</span>
           <span class="stat-src">Tulane Miracle</span>
         </div>
@@ -192,18 +197,22 @@
       <h2 class="page-title section-title reveal">Where policy meets patients.</h2>
       <div class="pillars reveal">
         <div class="pillar">
+          <span class="pillar-num" aria-hidden="true">01</span>
           <h3>Market Access &amp; Reimbursement</h3>
           <p>Medicaid policy, CMS rulemaking, and how coverage decisions actually reach patients.</p>
         </div>
         <div class="pillar">
+          <span class="pillar-num" aria-hidden="true">02</span>
           <h3>Health Policy &amp; Public Affairs</h3>
           <p>State and federal policy analysis, translated into executive-ready briefings.</p>
         </div>
         <div class="pillar">
+          <span class="pillar-num" aria-hidden="true">03</span>
           <h3>Health Equity &amp; Patient Access</h3>
           <p>Donor-registry diversity, screening uptake, and closing gaps in who gets care.</p>
         </div>
         <div class="pillar">
+          <span class="pillar-num" aria-hidden="true">04</span>
           <h3>Biotech &amp; Innovation Strategy</h3>
           <p>Where research and development decisions meet the commercial and regulatory realities of reaching patients.</p>
         </div>
