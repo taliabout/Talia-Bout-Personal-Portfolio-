@@ -27,9 +27,10 @@ horizontal scrolling, working menu and dark-mode toggle).
 
 ## Structure
 
-- `index.html` — Home: photo, bio, roles sought, impact numbers, focus areas, outside-of-work note
+- `index.html` — Home: portrait, short bio, roles sought, organization wordmarks, impact numbers, featured case study, focus areas
 - `experience.html` — Vertex, MGH, Gift of Life, Cancer Genetics Research, plus additional experience
 - `projects.html` — Writing Samples, Policy & Market Access, AI Projects, and Strategy Projects, each labeled with real status
+- `vertex-medicaid-case-study.html` — Case study: mapping Medicaid's "medically frail" exemption at Vertex (challenge, approach, outcome)
 - `leadership.html` — Tulane Miracle, Pi Beta Phi, Ubuntu Mundo, and additional involvement
 - `academics.html` — Education, coursework, skills, certifications
 - `resume.html` — Resume download (with an inline preview on desktop)
@@ -42,6 +43,13 @@ horizontal scrolling, working menu and dark-mode toggle).
 - `assets/fonts/` — Self-hosted Playfair Display and Inter (SIL Open Font License)
 - `css/style.css` — Shared design system (light/dark theme, layout, motion, print styles)
 - `js/script.js` — Theme toggle, mobile nav, scroll-reveal and count-up animations, scroll progress bar, back-to-top button
+
+## Analytics
+
+Page views are counted with [GoatCounter](https://www.goatcounter.com/), a free,
+open-source, privacy-friendly analytics service: no cookies, no personal data,
+no consent banner required. The dashboard lives at
+`https://taliabout.goatcounter.com`.
 
 ## Running locally
 
@@ -161,3 +169,13 @@ Iteration history for review — each entry is a pushed, deployed version.
   print-friendly styles, and content that stays visible if JavaScript is
   off. Regenerated the social-share card and home-screen icon in the new
   style. All colors re-checked against WCAG AA contrast.
+- **2026-10-06** — Recruiter-skim pass. Shortened the homepage bio to a
+  few lines and folded education and location into a single line under
+  the buttons. Added a subtle "Experience & Education" strip of grey
+  typographic wordmarks (Vertex Pharmaceuticals, Massachusetts General
+  Hospital, Gift of Life Marrow Registry, Tulane University). Added a full
+  case-study page for the Vertex Medicaid work requirements project
+  (challenge, approach, outcome, skills), featured on the homepage and
+  linked from Experience and Projects. Added privacy-friendly GoatCounter
+  visitor analytics. Cleaner details: flatter impact cards and removed the
+  separate quick-facts block.
