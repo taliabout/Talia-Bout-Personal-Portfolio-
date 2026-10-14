@@ -179,3 +179,15 @@ Iteration history for review — each entry is a pushed, deployed version.
   linked from Experience and Projects. Added privacy-friendly GoatCounter
   visitor analytics. Cleaner details: flatter impact cards and removed the
   separate quick-facts block.
+- **2026-10-14** — Reliability audit and recruiter-skim polish. Audited every
+  page with Lighthouse (99–100 performance, 100 accessibility, 100 SEO on
+  mobile), html-validate, an internal link checker, and browser tests at six
+  screen widths (320–1920px). Hardened the site: content can no longer stay
+  hidden if the script fails to load (3-second failsafe), CSS and JavaScript
+  links are versioned so browsers never mix old and new files after an
+  update, a `.nojekyll` file makes GitHub Pages serve files exactly as
+  written, and the scroll handler no longer forces layout on every frame.
+  Recruiter polish: one-click "Download Resume", direct email, and LinkedIn
+  buttons on the homepage; a "Toolkit" skills row; and a clickable
+  roles-at-a-glance timeline at the top of Experience.
+
