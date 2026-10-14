@@ -190,4 +190,8 @@ Iteration history for review — each entry is a pushed, deployed version.
   Recruiter polish: one-click "Download Resume", direct email, and LinkedIn
   buttons on the homepage; a "Toolkit" skills row; and a clickable
   roles-at-a-glance timeline at the top of Experience.
+- **2026-10-14** — Synced Gift of Life details to the latest resume (30
+  ambassadors and volunteers; 10 drives at 50 registrations each; channel
+  partnership with an annual community 5K) and replaced the downloadable
+  resume PDF with the current version.
 
