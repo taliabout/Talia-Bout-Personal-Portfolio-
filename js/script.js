@@ -134,9 +134,13 @@
     document.body.appendChild(toTop);
 
     var ticking = false;
+    var maxScroll = 0;
+    function measure() {
+      maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    }
     function onScroll() {
       var y = window.scrollY || window.pageYOffset;
-      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var max = maxScroll;
       progress.style.setProperty("--progress", max > 0 ? Math.min(y / max, 1) : 0);
       if (header) header.classList.toggle("scrolled", y > 8);
       toTop.classList.toggle("show", y > 600);
@@ -152,6 +156,9 @@
       },
       { passive: true }
     );
+    window.addEventListener("resize", function () { measure(); onScroll(); });
+    window.addEventListener("load", function () { measure(); onScroll(); });
+    measure();
     onScroll();
 
     /* Scroll-reveal and count-up animations */
@@ -174,5 +181,8 @@
       revealEls.forEach(function (el) { el.classList.add("in-view"); });
       counters.forEach(function (el) { el.removeAttribute("data-count"); });
     }
+
+    /* Tell the head-script failsafe that everything initialised */
+    root.setAttribute("data-ready", "");
   });
 })();

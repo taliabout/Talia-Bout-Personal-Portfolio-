@@ -53,10 +53,13 @@
 }
 </script>
 <link rel="preload" as="image" href="assets/img/talia-portrait-800.webp" imagesrcset="assets/img/talia-portrait-440.webp 440w, assets/img/talia-portrait-800.webp 800w" imagesizes="(max-width: 900px) 240px, 380px" fetchpriority="high" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css?v=20261014" />
 <script>
   (function () {
-    document.documentElement.classList.add("js");
+    var d = document.documentElement;
+    d.classList.add("js");
+    /* Failsafe: if the main script hasn't finished in 3s, show all content */
+    setTimeout(function () { if (!d.hasAttribute("data-ready")) d.classList.remove("js"); }, 3000);
     try {
       var t = localStorage.getItem("talia-theme");
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
@@ -111,8 +114,9 @@
           <p>Full-time roles beginning in 2027 in market access and reimbursement, health policy and public affairs, and life-sciences consulting.</p>
         </div>
         <div class="home-actions">
-          <a href="resume.html" class="btn btn-primary">View Resume</a>
-          <a href="contact.html" class="btn">Get in Touch</a>
+          <a href="assets/Talia-Bout-Resume.pdf" class="btn btn-primary" download="Talia-Bout-Resume.pdf">Download Resume</a>
+          <a href="mailto:tbout@tulane.edu" class="btn">Email Talia</a>
+          <a href="https://linkedin.com/in/talia-bout" class="btn btn-icon" target="_blank" rel="noopener" aria-label="LinkedIn profile (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.02h4.56V23H.22zM8.48 8.02h4.37v2.05h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-7.27c0-1.73-.03-3.96-2.41-3.96-2.42 0-2.79 1.89-2.79 3.84V23H8.48z"/></svg></a>
         </div>
         <p class="hero-meta">Tulane University &middot; GPA 3.81 &middot; Dean&rsquo;s List &middot; New Orleans &amp; Concord, MA</p>
       </div>
@@ -263,6 +267,20 @@
           <p>Where research and development decisions meet the commercial and regulatory realities of reaching patients.</p>
         </div>
       </div>
+      <div class="toolkit reveal">
+        <p class="toolkit-label">Toolkit</p>
+        <ul class="chip-row">
+          <li class="chip">Policy &amp; Legislative Research</li>
+          <li class="chip">Regulatory Analysis</li>
+          <li class="chip">Research Synthesis</li>
+          <li class="chip">Executive Briefings</li>
+          <li class="chip">Stakeholder Engagement</li>
+          <li class="chip">Data Analysis</li>
+          <li class="chip">Excel (MOS Certified)</li>
+          <li class="chip">Python</li>
+          <li class="chip">Spanish</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -284,7 +302,7 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20261014"></script>
 <script data-goatcounter="https://taliabout.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

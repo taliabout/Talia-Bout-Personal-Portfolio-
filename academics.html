@@ -25,10 +25,13 @@
 <meta property="og:image:alt" content="Talia R. Bout — Public Health, Policy, Strategy" />
 <meta name="twitter:card" content="summary_large_image" />
 <!-- meta:end -->
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css?v=20261014" />
 <script>
   (function () {
-    document.documentElement.classList.add("js");
+    var d = document.documentElement;
+    d.classList.add("js");
+    /* Failsafe: if the main script hasn't finished in 3s, show all content */
+    setTimeout(function () { if (!d.hasAttribute("data-ready")) d.classList.remove("js"); }, 3000);
     try {
       var t = localStorage.getItem("talia-theme");
       if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
@@ -161,7 +164,7 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20261014"></script>
 <script data-goatcounter="https://taliabout.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
